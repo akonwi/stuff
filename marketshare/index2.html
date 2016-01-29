@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html {
+        height: 100%;
+        width: 100%;
+      }
+      body {
+        height: inherit;
+        width: inherit;
+      }
+      body div {
+        border: 1px solid black;
+      }
+      .centered {
+        display: block;
+        margin: 0 auto 0 auto;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      #div-one {
+        height: 600px;
+        width: 700px;
+      }
+      #div-two {
+        height: 500px;
+        width: 400px;
+      }
+      #div-three {
+        height: 200px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id='div-one' class='centered'>
+      <div id='div-two' class='centered'>
+        <div id='div-three' class='centered'></div>
+      </div>
+    </div>
+  </body>
+<html>
